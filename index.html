@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/fae22c1c8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lux/bootstrap.min.css"
+    />
+    <title>Little Black Book</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-book-open text-primary"></i> <br> Little <br> Black Book 
+      </h1>
+      <form id="book-form">
+        <div class="form-group">
+          <label for="first"> First Name</label>
+          <input type="text" id="first" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="last">Last Name</label>
+          <input type="text" id="last" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="number">Phone Number</label>
+          <input type="text" id="digits" class="form-control" />
+        </div>
+        <input
+          type="submit"
+          value="Add Number"
+          class="btn btn-primary btn-block"
+        />
+      </form>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+          </tr>
+        </thead>
+        <tbody id="contact-list"></tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
